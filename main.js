@@ -1,10 +1,21 @@
-document.querySelectorAll("section").forEach((section, index) => {
-    section.style.opacity = "0";
-    section.style.transform = "translateY(20px)";
+const themeBtn = document.getElementById("themeBtn");
 
-    setTimeout(() => {
-        section.style.transition = "0.5s ease";
-        section.style.opacity = "1";
-        section.style.transform = "translateY(0)";
-    }, index * 150);
+themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+});
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+
+    });
+
+});
+
+document.querySelectorAll(".hidden").forEach(element => {
+    observer.observe(element);
 });

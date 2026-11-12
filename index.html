@@ -1,80 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ivan Iovchev</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Iovchev</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <header>
-        <h1>Ivan Iovchev</h1>
-        <p>ICT Student • Junior Full Stack Developer</p>
-    </header>
+        <header class="hidden">
 
-    <section>
-        <h2>About</h2>
-        <p>
-            ICT student from Joensuu, Finland.
-            Interested in web development, JavaScript,
-            Node.js, Express and databases.
-        </p>
-    </section>
+            <div class="avatar">IV</div>
 
-    <section>
-        <h2>Skills</h2>
-        <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Node.js</span>
-            <span>Express</span>
-            <span>MySQL</span>
-            <span>Git</span>
-            <span>Linux</span>
-        </div>
-    </section>
+            <h1>Ivan Iovchev</h1>
 
-    <section>
-        <h2>Projects</h2>
+            <p class="subtitle">
+                ICT Student & Full Stack Developer
+            </p>
 
-        <div class="project">
-            <h3>Osto-ja-Myyntikanava</h3>
-            <p>
-                Marketplace application built with
+            <p class="intro">
+                Building modern web applications with JavaScript,
+                Node.js, Express and MySQL.
+            </p>
+
+            <div class="actions">
+                <a href="#" class="btn">GitHub</a>
+                <a href="#" class="btn">Contact</a>
+                <button id="themeBtn" class="btn">
+                    Theme
+                </button>
+            </div>
+
+        </header>
+
+        <section class="hidden">
+
+            <div class="section-title">About</div>
+
+            <p class="about">
+                I am studying Information and Communication Technology
+                in Joensuu, Finland. My main interests are backend
+                development, databases and building full-stack web
+                applications. Recently I have been working on the
+                Osto-ja-Myyntikanava marketplace project using
                 Node.js, Express, Handlebars and MySQL.
             </p>
-        </div>
 
-        <div class="project">
-            <h3>Web Applications</h3>
-            <p>
-                Responsive and interactive websites
-                using modern web technologies.
-            </p>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <h2>Education</h2>
-        <p>
-            Tieto- ja viestintätekniikan perustutkinto<br>
-            Joensuun koulutusyksikkö
-        </p>
-    </section>
+        <section class="hidden">
 
-    <section>
-        <h2>Contact</h2>
-        <p>📍 Joensuu, Finland</p>
-        <p>📧 your@email.com</p>
-        <p>💻 github.com/yourusername</p>
-    </section>
+            <div class="section-title">Skills</div>
 
-</div>
+            <div class="skills">
 
-<script src="script.js"></script>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">Express</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">Git</div>
+                <div class="skill">Linux</div>
+                <div class="skill">REST API</div>
+                <div class="skill">Handlebars</div>
+
+            </div>
+
+        </section>
+
+        <section class="hidden">
+
+            <div class="section-title">Projects</div>
+
+            <div class="project">
+
+                <h3>Osto-ja-Myyntikanava</h3>
+
+                <p>
+                    Marketplace application where users can create,
+                    browse and manage advertisements.
+                </p>
+
+                <div class="stack">
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>MySQL</span>
+                    <span>Handlebars</span>
+                </div>
+
+            </div>
+
+            <div class="project">
+
+                <h3>Authentication System</h3>
+
+                <p>
+                    User authentication, sessions and access control.
+                </p>
+
+                <div class="stack">
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>JavaScript</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="hidden">
+
+            <div class="section-title">Education</div>
+
+            <div class="timeline-item">
+
+                <h3>
+                    Tieto- ja viestintätekniikan perustutkinto
+                </h3>
+
+                <p>
+                    Joensuun koulutusyksikkö
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="hidden">
+
+            <div class="section-title">Contact</div>
+
+            <div class="contact">
+
+                <p>📍 Joensuu, Finland</p>
+
+                <a href="mailto:ivan@example.com">
+                    📧 ivan@example.com
+                </a>
+
+                <a href="#">
+                    💻 GitHub Profile
+                </a>
+
+            </div>
+
+        </section>
+
+        <footer>
+            © 2026 Ivan Iovchev
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
