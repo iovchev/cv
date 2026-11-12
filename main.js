@@ -1,6 +1,10 @@
-const year = new Date().getFullYear();
+document.querySelectorAll("section").forEach((section, index) => {
+    section.style.opacity = "0";
+    section.style.transform = "translateY(20px)";
 
-document.getElementById("year").textContent =
-    `© ${year} Ivan Iovchev. All rights reserved.`;
-
-console.log("CV Website Loaded Successfully");
+    setTimeout(() => {
+        section.style.transition = "0.5s ease";
+        section.style.opacity = "1";
+        section.style.transform = "translateY(0)";
+    }, index * 150);
+});
